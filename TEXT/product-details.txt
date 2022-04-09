@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Plants-PlantLifes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+     <div class="container">
+        <div class="navbar">
+            <div class="logo"><img src="img/LG1.png" alt="logo" class="src"></div>
+             <nav>
+              <ul id="MenuItems">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Product</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Account</a></li>
+                 </ul>
+            </nav> 
+            <input type="text" name= "search" id= "search">
+            <button class="btn btn-sm">Search</button>
+           <img src="img/flower.png" width="50px" height="50px">
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+         </div>
+         
+    </div>
+  
+<!----single product detail------->
+
+ <div class="small-container single-product">
+     <div class="row">
+         <div class="col-2">
+             <img src="img/Warneck Dracaena.jpg" width="100%" id="ProductImg">
+               
+             <div class="small-img-row">
+                 <div class="small-img-col">
+                     <img src="img/Warneck Dracaena1.jpeg" width="100%" class="small-img">
+                 </div>
+
+                 <div class="small-img-col">
+                    <img src="img/Warneck Dracaena3.jpeg" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="img/Warneck Dracaena.jpg" width="100%" class="small-img">
+                </div>
+                 
+             </div>
+
+
+         </div>
+         <div class="col-2">
+             <p>home / plant</p>
+             <h1>Warneck Dracaena</h1>
+             <h4>Rs 500</h4>
+             <input type="number" value="1">
+             <a href="" class="btn-sm">Add To Cart</a>
+
+                <h3>Detail product <i class="fa fa-indent" aria-hidden="true"></i></h3>
+                <br>
+             <P>Combat pollutants associated with varnishes and oils with this dracaena. The Warneckii grows inside easily, even without direct sunlight. 
+                 With striped leaves forming clusters atop a thin stem, this houseplant can be striking, especially if it reaches its potential height of 12 feet.
+
+             </P>
+        </div>
+     </div>
+ </div>
+
+<!------Title------->
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View more</p>
+    </div>
+</div>
+
+
+
+<!-----Products---->   
+    <div class="small-container">
+
+        <div class="row">
+    <div class="col-4">
+        <img src="img/pexels-daria-shevtsova-1589908.jpg">
+        <h4>Alovera</h4>
+        <p>Rs: 500</p>
+    </div>
+    <div class="col-4">
+        <img src="img/Peace lily2.jpeg">
+        <h4>Peace Lily</h4>
+        <p>Rs: 500</p>
+    </div>
+    <div class="col-4">
+        <img src="img/Warneck Dracaena2.jpeg">
+        <h4>Warneck Dracaena</h4>
+        <p>Rs: 500</p>
+    </div>
+ </div>
+ </div>
+
+
+  <!-------------footer------------------>
+
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Get Your Plants On PlantLifes</h3>
+            </div>
+            <div class="footer-col-3">
+                <h3>useful Link</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+             </div>
+              <div class="footer-col-4">
+                <h3>Join Us</h3>
+                <ul>
+                    <li><a href="" class="a-sm">Instagram</a></li>
+                    <li><a href="" class= "a-sm">Facebook</a></li>
+                    <li><a href="" class= "a-sm">Youtube</a></li>
+                    <li><a href="" class= "a-sm">Twitter</a></li>
+                </ul>
+              </div>
+
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - PlantLifes</p>
+    </div>
+ </div>
+   <!-------js for toggle menu------->
+   <script>
+    var MenuItems = document.getElementById("MenuItems");
+   
+   MenuItems.style.maxHeight = "0px";
+
+   function menutoggle(){
+       if(MenuItems.style.maxHeight == "0px")
+       {
+        MenuItems.style.maxHeight = "200px";
+       }
+       else
+       {
+        MenuItems.style.maxHeight = "0px";
+       }
+   }
+ </script>
+<!-----Js for product gallary----->
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src =  SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src =  SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src =  SmallImg[2].src;
+    }
+
+</script>
+
+
+
+
+
+</body>
+</html>

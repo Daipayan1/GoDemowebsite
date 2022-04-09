@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Plants-PlantLifes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+     <div class="container">
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="img/logo-1446293__340.webp" alt="logo" class="src"></a></div>
+             <nav>
+              <ul id="MenuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Product</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="Account.html">Account</a></li>
+                 </ul>
+            </nav> 
+            <input type="text" name= "search" id= "search">
+            <button class="btn btn-sm">Search</button>
+            <a href="cart.html"><img src="img/flower.png" width="50px" height="50px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+         </div>
+         
+    </div>
+ <!--------Account-page--------->
+ 
+ <div class="account-page">
+     <div class="container">
+         <div class="row">
+             <div class="col-2">
+                 <img src="img/GO_logo.png" width="90%">
+             </div>
+             <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="signup()">Sign Up</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Enter your password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot password</a>
+                    </form>
+                    <form id="SignUpForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Enter Your Email">
+                        <input type="PhoneNumber" placeholder="Enter Your Phonenumber">
+                        <input type="password" placeholder="Enter your password">
+                        <button type="submit" class="btn">Sign Up</button>
+                    </form>
+
+                </div>
+            </div>
+         </div>
+     </div>
+ </div>
+
+
+
+
+
+  <!-------------footer------------------>
+
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <div class="logo"><img src="img/GO_logo.png" alt="logo" class="src"></div>
+            </div>
+            <div class="footer-col-3">
+                <h3>useful Link</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+             </div>
+              <div class="footer-col-4">
+                <h3>Join Us</h3>
+                <ul>
+                    <li><a href="" class="a-sm">Instagram</a></li>
+                    <li><a href="" class= "a-sm">Facebook</a></li>
+                    <li><a href="" class= "a-sm">Youtube</a></li>
+                    <li><a href="" class= "a-sm">Twitter</a></li>
+                </ul>
+              </div>
+
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - PlantLifes</p>
+    </div>
+ </div>
+   <!-------js for toggle menu------->
+   <script>
+    var MenuItems = document.getElementById("MenuItems");
+   
+   MenuItems.style.maxHeight = "0px";
+
+   function menutoggle(){
+       if(MenuItems.style.maxHeight == "0px")
+       {
+        MenuItems.style.maxHeight = "200px";
+       }
+       else
+       {
+        MenuItems.style.maxHeight = "0px";
+       }
+   }
+ </script>
+ <!-------js for toggle Form------->
+ <script>
+
+     var LoginForm = document.getElementById("LoginForm");
+     var SignUpForm = document.getElementById("SignUpForm");
+     var Indicator = document.getElementById("Indicator");
+           
+         function signup(){
+            SignUpForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+         }
+         function login(){
+            SignUpForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+         }
+
+
+
+
+
+
+ </script>
+
+</body>
+</html>
