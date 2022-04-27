@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Plants-PlantLifes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+     <div class="container">
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="img/GO_logo.png" alt="logo" class="src"></a></div>
+             <nav>
+              <ul id="MenuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Product</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="Account.html">Account</a></li>
+                 </ul>
+            </nav> 
+            <input type="text" name= "search" id= "search">
+            <button class="btn btn-sm">Search</button>
+            <a href="cart.html"><img src="img/flower.png" width="50px" height="50px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+         </div>
+         
+    </div>
+  
+<!----single product detail------->
+
+ <div class="small-container single-product">
+     <div class="row">
+         <div class="col-2">
+             <img src="img/CORNSTALK DRACAENA.webp" width="100%" id="ProductImg">
+               
+             <div class="small-img-row">
+                 <div class="small-img-col">
+                     <img src="img/Cornstalk_dracaena_pdplarge-mrd--570246_AFS_00_00_00_7920733.webp" width="100%" class="small-img">
+                 </div>
+
+                 <div class="small-img-col">
+                    <img src="img/cornstalk 2.jpg" width="100%" class="small-img">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="img/cornstalk.jpg" width="100%" class="small-img">
+                </div>
+                 
+             </div>
+         </div>
+         <div class="col-2">
+             <p>home / plant</p>
+             <h1>Cornstalk Dracaena</h1>
+             <h4>Rs 449</h4>
+             <input type="number" value="1">
+             <a href="" class="btn-sm">Add To Cart</a>
+
+                <h3>Detail product <i class="fa fa-indent" aria-hidden="true"></i></h3>
+                <br>
+             <P>What is a Dracena plant good for?
+                Dracaena is one of the most effective houseplants in air purification. It helps remove formaldehyde, 
+                benzene, trichloroethylene and carbon dioxide. These are chemicals linked with several health problems 
+                among them headaches, respiratory problems, anemia, marrow disease, kidney disease among others.
+
+             </P>
+        </div>
+     </div>
+ </div>
+
+<!------Title------->
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <a href="products.html"><p>View more</p></a>
+    </div>
+</div>
+
+
+
+<!-----Products---->   
+    <div class="small-container">
+
+        <div class="row">
+    <div class="col-4">
+        <a href="Alovera.html"><img src="img/green-aloe-vera-organic-plant-with-pot-1-homegarden-original-imafs26azgxyvjan.webp"></a>
+        <h4>Aloevera</h4>
+        <p>Rs: 500</p>
+    </div>
+    <div class="col-4">
+        <img src="img/Peace lily2.webp">
+        <h4>Peace Lily</h4>
+        <p>Rs: 500</p>
+    </div>
+    <div class="col-4">
+        <a href="product-details.html"><img src="img/Warneck Dracaena2.jpeg"></a>
+        <h4>Warneck Dracaena</h4>
+        <p>Rs: 500</p>
+    </div>
+    <div class="col-4">
+        <a href=""><img src="img/ixorared_45.webp"></a>
+        <h4>Ixora (Rugmini) Plant - Red</h4>
+        <p>Rs: 599</p>
+    </div>
+ </div>
+ </div>
+
+
+  <!-------------footer------------------>
+
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <div class="logo"><a href="index.html"><img src="img/GO_logo.png" alt="logo" class="src"></a></div>
+            </div>
+            <div class="footer-col-3">
+                <h3>useful Link</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+             </div>
+              <div class="footer-col-4">
+                <h3>Join Us</h3>
+                <ul>
+                    <li><a href="" class="a-sm">Instagram</a></li>
+                    <li><a href="" class= "a-sm">Facebook</a></li>
+                    <li><a href="" class= "a-sm">Youtube</a></li>
+                    <li><a href="" class= "a-sm">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/daipayan-khamaru-31abaa213" class="a-sm">Linkedin</a></li>
+                </ul>
+              </div>
+
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - PlantLifes</p>
+    </div>
+ </div>
+   <!-------js for toggle menu------->
+   <script>
+    var MenuItems = document.getElementById("MenuItems");
+   
+   MenuItems.style.maxHeight = "0px";
+
+   function menutoggle(){
+       if(MenuItems.style.maxHeight == "0px")
+       {
+        MenuItems.style.maxHeight = "200px";
+       }
+       else
+       {
+        MenuItems.style.maxHeight = "0px";
+       }
+   }
+ </script>
+<!-----Js for product gallary----->
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src =  SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src =  SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src =  SmallImg[2].src;
+    }
+
+</script>
+
+
+
+
+
+</body>
+</html>
