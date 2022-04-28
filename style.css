@@ -503,7 +503,7 @@ form a{
         font-size: 10px;
     }
     .col-3, .col-4{
-        flex-basis: 50%;
+        flex-basis: 100%;
     }
     .single-product .row{
         text-align: left;
@@ -519,6 +519,9 @@ form a{
         display: none;
 
 
+    }
+    .footer-col-3 ul li{
+        justify-content: center;
     }
 }
 
