@@ -286,7 +286,7 @@ select :focus{
      background: burlywood;
      background-color: cornsilk;
      padding: 30px 0;
-     border-radius: 10%;
+     border-radius: 8%;
  }
 .single-product .col-2 img{
     padding: 0;
@@ -471,7 +471,7 @@ form a{
     nav ul{
         position: absolute;
         top: 70px;
-        left: 0;
+        left: 10px;
         background: #333;
         width: 100%;
         overflow: hidden;
@@ -497,10 +497,13 @@ form a{
 
 @media only screen and (max-width: 600px){
     .row{
-        text-align: center;
+        text-align: auto;
+    }
+    .col-2 p{
+        font-size: 10px;
     }
     .col-3, .col-4{
-        flex-basis: 100%;
+        flex-basis: 50%;
     }
     .single-product .row{
         text-align: left;
